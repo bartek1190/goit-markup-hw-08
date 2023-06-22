@@ -1,0 +1,45 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $general-font;
+  color: $general-font-color;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-team {
+  background-color: $container-team-color;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.section-client__heading {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+  text-align: center;
+}

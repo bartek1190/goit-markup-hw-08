@@ -1,0 +1,35 @@
+.navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+
+  &__menu-list {
+    display: flex;
+    gap: 46px;
+    list-style: none;
+  }
+  &__link {
+    color: $general-font-color;
+    text-decoration: none;
+    position: relative;
+    transition: $general-transition;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $general-blue-color;
+  }
+  &--curret::after {
+    content: '';
+    position: absolute;
+    background-color: $general-blue-color;
+    width: 100%;
+    left: 0;
+    bottom: -32px;
+    border-radius: 2px;
+    height: 4px;
+  }
+  &--active {
+    color: $general-blue-color;
+  }
+}

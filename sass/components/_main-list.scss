@@ -1,0 +1,28 @@
+.main-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  &__card {
+    background-color: $container-team-color;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  &__heading {
+    font-size: 14px;
+    line-height: 1.2em;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7em;
+    letter-spacing: 0.03em;
+    color: $contact-color;
+  }
+}

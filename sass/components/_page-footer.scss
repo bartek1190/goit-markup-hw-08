@@ -1,0 +1,12 @@
+.page-footer {
+  background-color: $general-gray-color;
+
+  &__section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  &__flexible {
+    display: flex;
+    gap: 70px;
+  }
+}

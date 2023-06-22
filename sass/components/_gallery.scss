@@ -1,0 +1,25 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__figure {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc((100% - 60px) / 3);
+    transition: $general-transition;
+
+    &:hover .overlay,
+    &:focus .overlay {
+      transform: translateY(0);
+    }
+    &:hover,
+    &:focus {
+      box-shadow: $gallery-figure-shadow;
+    }
+  }
+  &__card {
+    position: relative;
+    overflow: hidden;
+  }
+}

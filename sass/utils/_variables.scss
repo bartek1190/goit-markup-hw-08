@@ -1,0 +1,43 @@
+$general-font: 'Roboto', sans-serif;
+$logo-font: 'Raleway', sans-serif;
+
+$general-blue-color: #2196f3;
+$general-gray-color: #2f303a;
+$container-team-color: #f5f4fa;
+$general-font-color: #212121;
+$contact-color: #757575;
+$black-font-color: #000000;
+$white-font-color: #ffffff;
+$border-header-color: #ececec;
+$general-white-color: #e5e5e5;
+$portfolio-border-color: #eeeeee;
+$icon-color: #afb1b8;
+
+$text-area-color: rgba(117, 117, 117, 0.5);
+$footer-link-contact-color: rgba(255, 255, 255, 0.6);
+$newsletter-placeholder: rgba(255, 255, 255, 0.3);
+$overley-animation-blue: rgba(33, 150, 243, 0.9);
+$whatwedo-card-bg: rgba(47, 48, 58, 0.8);
+$widget-item: #ffffff1a;
+
+$modal-border: 1px solid rgba(0, 0, 0, 0.1);
+$modal-input-border: 1px solid rgba(33, 33, 33, 0.2);
+
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+$general-transition: 250ms $cubic-bezier;
+
+$card-shadows: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+  0px 1px 3px 0px #0000001f;
+$modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+$gallery-figure-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+$btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$btn-menu-shadows: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+  0px 3px 1px 0px #0000001a;
+
+$page-banner-gradien: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(/goit-markup-hw-04/images/banner.jpg);

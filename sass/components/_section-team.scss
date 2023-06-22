@@ -1,0 +1,16 @@
+.team {
+  background-color: $container-team-color;
+
+  &__header {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.2em;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  &__list {
+    @include flex-center;
+    gap: 30px;
+    list-style: none;
+  }
+}

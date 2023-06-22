@@ -1,0 +1,13 @@
+.page-header {
+  border-bottom: 1px solid;
+  border-color: $border-header-color;
+
+  &__flex-container {
+    @include flex-center-space;
+    height: 80px;
+  }
+  &__gap-container {
+    @include flex-center-space;
+    gap: 30%;
+  }
+}

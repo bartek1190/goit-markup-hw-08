@@ -1,0 +1,25 @@
+.card__item {
+  max-height: 110px;
+  padding: 20px 24px 20px 24px;
+  border: solid 1px;
+  border-color: $portfolio-border-color;
+  border-top: 0;
+}
+
+.card__container {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+.card__description1 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+}
+.card__description2 {
+  font-weight: 400;
+  line-height: 1.9em;
+  letter-spacing: 0.03em;
+  color: $contact-color;
+}

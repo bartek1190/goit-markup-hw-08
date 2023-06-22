@@ -1,0 +1,15 @@
+.logo {
+  font-family: $logo-font;
+  color: $black-font-color;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1.4em;
+  letter-spacing: 0.03em;
+
+  &__title {
+    color: $general-blue-color;
+    &--accent {
+      color: $white-font-color;
+    }
+  }
+}

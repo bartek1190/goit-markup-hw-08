@@ -1,0 +1,46 @@
+.acceptance {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $contact-color;
+  margin-left: 55px;
+  align-items: center;
+  margin-top: 16px;
+
+  &__checkbox-hidden {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  &__checkbox-icon-unchecked {
+    position: relative;
+  }
+
+  &__checkbox-icon {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 0.5px;
+    margin-bottom: 3px;
+    visibility: hidden;
+    fill: $white-font-color;
+    border-radius: 2px;
+    transition-property: background-color, visibility;
+    transition: $general-transition;
+  }
+
+  &__checkbox-hidden:checked ~ &__checkbox-icon {
+    visibility: visible;
+    background-color: $general-blue-color;
+  }
+
+  &__text-regul {
+    margin-left: 8px;
+  }
+
+  &__text-decor {
+    color: $general-blue-color;
+    text-decoration: underline;
+  }
+}

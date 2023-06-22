@@ -1,0 +1,34 @@
+.contakt {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+
+  &__title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $contact-color;
+    display: flex;
+    align-items: center;
+    transition: $general-transition;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $general-blue-color;
+  }
+  &__link:hover .contakt__icon,
+  &__link:focus .contakt__icon {
+    fill: $general-blue-color;
+  }
+  &__icon {
+    fill: $contact-color;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,42 @@
+.newsletter {
+  display: block;
+
+  &__label {
+    display: block;
+  }
+  &__input {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid $general-blue-color;
+    filter: drop-shadow($btn-shadow);
+    border-radius: 4px;
+    padding: 16px;
+    color: $white-font-color;
+    outline: none;
+  }
+  &__button {
+    height: 50px;
+    width: 200px;
+    border-radius: 4px;
+    background-color: $general-blue-color;
+    font-weight: 700;
+    line-height: 1.9em;
+    letter-spacing: 0.06em;
+    color: $white-font-color;
+    box-shadow: $btn-shadow;
+    @include flex-center;
+    gap: 24px;
+    cursor: pointer;
+  }
+  &__div-flexible {
+    display: flex;
+    gap: 12px;
+  }
+  &__input:placeholder-shown {
+    border-color: $newsletter-placeholder;
+  }
+  .newsletter__icon-hovering {
+    fill: $white-font-color;
+  }
+}

@@ -1,0 +1,30 @@
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: 11px;
+    padding-top: 11px;
+    transition: $general-transition;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $general-blue-color;
+      background-color: $general-blue-color;
+    }
+    &:hover &--accent,
+    &:focus &--accent {
+      fill: $white-font-color;
+    }
+    &--accent {
+      fill: $icon-color;
+    }
+  }
+}

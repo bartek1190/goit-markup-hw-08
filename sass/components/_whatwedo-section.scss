@@ -1,0 +1,38 @@
+.section-whatwedo {
+  margin-top: 94px;
+  &__heading {
+    font-size: 36px;
+    line-height: 1.2em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+  }
+  &__description {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.15em;
+    letter-spacing: 0.03em;
+    color: $white-font-color;
+    text-transform: uppercase;
+  }
+  &__card {
+    height: 70px;
+    width: 100%;
+    background: $whatwedo-card-bg;
+    position: absolute;
+    bottom: 0;
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,18 @@
+.modal__btn-container {
+  height: 50px;
+  width: 200px;
+  border-radius: 4px;
+  background-color: $general-blue-color;
+  box-shadow: $btn-shadow;
+  @include flex-center;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  .modal__btn {
+    color: $white-font-color;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+  }
+}

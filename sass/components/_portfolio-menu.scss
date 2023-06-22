@@ -1,0 +1,28 @@
+.portfolio-menu {
+  @include flex-center;
+  list-style: none;
+  gap: 8px;
+  margin-bottom: 50px;
+
+  &__button {
+    background-color: $container-team-color;
+    height: 38px;
+    width: 93px;
+    border-radius: 4px;
+    border: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    transition: $general-transition;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      color: $white-font-color;
+      background-color: $general-blue-color;
+      box-shadow: $btn-menu-shadows;
+    }
+  }
+}

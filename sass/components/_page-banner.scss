@@ -1,0 +1,35 @@
+.page-banner {
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 600px;
+  background-image: $page-banner-gradien;
+  background-size: cover;
+  color: $white-font-color;
+  padding-top: 200px;
+  text-align: center;
+
+  &__banner-title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.3em;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &__banner-button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9em;
+    letter-spacing: 0.06em;
+    text-align: center;
+    background-color: $general-blue-color;
+    color: $white-font-color;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: $btn-shadow;
+    padding: 10px 41px 10px 41px;
+  }
+}
