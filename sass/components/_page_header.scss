@@ -6,12 +6,12 @@
     @include flex-center-space;
     height: 80px;
   }
-  &__gap-container {
-    @include flex-center-space;
-  }
 
   &__contakt {
     display: none;
+    @include tablet {
+      display: flex;
+    }
   }
   &__hamburger {
     background-color: transparent;

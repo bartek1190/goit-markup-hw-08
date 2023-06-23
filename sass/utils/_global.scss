@@ -20,15 +20,17 @@ body {
 
 .container {
   max-width: 100%;
-  width: 480px;
+  max-width: 480px;
   padding: 0 15px;
   margin: 0 auto;
 
   @include tablet {
     max-width: 768px;
+    margin: 0 auto;
   }
   @include desktop {
     max-width: 1200px;
+    margin: 0 auto;
   }
 }
 .section {

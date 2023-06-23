@@ -4,6 +4,10 @@
   gap: 50px;
   align-items: center;
 
+  @include tablet {
+    display: block;
+  }
+
   &__title {
     font-size: 14px;
     font-weight: 500;
