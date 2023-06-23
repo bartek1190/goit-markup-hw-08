@@ -1,0 +1,79 @@
+.menu-mobile {
+  list-style: none;
+  margin-top: 30px;
+  margin-left: 30px;
+  &__item {
+    margin-bottom: 15px;
+  }
+  &__link {
+    color: $general-font-color;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    padding: bottom 10px;
+    transition: $general-transition;
+
+    &:hover,
+    &:focus {
+      color: $general-blue-color;
+    }
+  }
+  &__contacts {
+    list-style: none;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+  &__contacts-item {
+    margin-bottom: 15px;
+  }
+  &__tel {
+    color: $general-font-color;
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition: $general-transition;
+    &:hover,
+    &:focus {
+      color: $general-blue-color;
+    }
+  }
+  &__mail {
+    color: $general-font-color;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition: $general-transition;
+    &:hover,
+    &:focus {
+      color: $general-blue-color;
+    }
+  }
+  &__social-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  &__border {
+    color: transparent;
+    border-right: 1px solid #21212133;
+  }
+  &__social-link-link {
+    color: $general-blue-color;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+  }
+}

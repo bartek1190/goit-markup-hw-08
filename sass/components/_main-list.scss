@@ -1,6 +1,7 @@
 .main-list {
   list-style: none;
   display: flex;
+  display: none;
   justify-content: space-between;
   gap: 30px;
   &__card {

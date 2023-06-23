@@ -19,14 +19,22 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 100%;
+  width: 480px;
   padding: 0 15px;
   margin: 0 auto;
-  max-width: 100%;
+
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: none;
 }
 .section-team {
   background-color: $container-team-color;
@@ -37,6 +45,7 @@ img {
   height: auto;
 }
 .section-client__heading {
+  display: none;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.2em;

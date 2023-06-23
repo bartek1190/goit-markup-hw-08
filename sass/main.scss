@@ -1,15 +1,14 @@
 @import './utils/variables';
-@import './components/mixin';
-@import './components/global';
+@import './utils/mixin';
+@import './utils/global';
 @import './components/page_header';
 @import './components/logo';
 @import './components/navigation';
 @import './components/contact';
 @import './components/page-banner';
-@import './components/form-modal';
 @import './components/acceptance';
-@import './components/modal-button';
-@import './components/_main-list';
+
+@import './components/main-list';
 @import './components/whatwedo-section';
 @import './components/section-team';
 @import './components/card-team';
@@ -21,5 +20,9 @@
 @import './components/newsletter';
 @import './components/portfolio-menu';
 @import './components/gallery';
-@import './components/_overlay_animation';
+@import './components/overlay_animation';
 @import './components/card-portf';
+@import './components/menu-container';
+@import './components/form-modal';
+@import './components/modal-button';
+@import './components/menu-mobile';

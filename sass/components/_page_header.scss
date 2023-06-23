@@ -8,6 +8,22 @@
   }
   &__gap-container {
     @include flex-center-space;
-    gap: 30%;
+  }
+
+  &__contakt {
+    display: none;
+  }
+  &__hamburger {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    &:hover,
+    &:focus {
+      fill: $general-blue-color;
+    }
+
+    @include tablet {
+      display: none;
+    }
   }
 }
