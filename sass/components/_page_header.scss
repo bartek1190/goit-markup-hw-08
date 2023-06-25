@@ -4,7 +4,10 @@
 
   &__flex-container {
     @include flex-center-space;
-    height: 80px;
+    height: 60px;
+    @include tablet {
+      height: 80px;
+    }
   }
 
   &__contakt {

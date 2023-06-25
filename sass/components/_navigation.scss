@@ -5,6 +5,9 @@
     margin-left: 83px;
     margin-right: auto;
   }
+  @include desktop {
+    margin-left: 93px;
+  }
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2em;
@@ -12,8 +15,11 @@
 
   &__menu-list {
     display: flex;
-    gap: 46px;
+    gap: 60px;
     list-style: none;
+    @include desktop {
+      gap: 46px;
+    }
   }
   &__link {
     color: $general-font-color;

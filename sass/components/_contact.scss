@@ -1,11 +1,14 @@
 .contakt {
-  list-style: none;
   display: flex;
   gap: 50px;
-  align-items: center;
-
   @include tablet {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @include desktop {
+    flex-direction: row;
+    gap: 30px;
   }
 
   &__title {
