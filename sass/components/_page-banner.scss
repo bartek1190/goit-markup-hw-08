@@ -1,23 +1,46 @@
 .page-banner {
-  display: none;
+  max-width: 480px;
+  height: 400px;
+  background: $page-banner-color url(../images/bgmobile@x1.jpg) no-repeat 50%
+    50% / cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bgmobile@x2.jpg);
+  }
   margin: 0 auto;
-  max-width: 1600px;
-  height: 600px;
-  background-image: $page-banner-gradien;
-  background-size: cover;
   color: $white-font-color;
-  padding-top: 200px;
+
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tablet {
+    background: url(../images/bgtablet@x1.jpg) no-repeat 50% 50% / cover;
+    max-width: 768px;
+  }
+  @include desktop {
+    background: url(../images/bgdesktop@x1.jpg) no-repeat 50% 50% / cover;
+    max-width: 1600px;
+    height: 600px;
+  }
 
   &__banner-title {
-    font-size: 44px;
+    color: $white-font-color;
+    font-size: 26px;
     font-weight: 900;
     line-height: 1.3em;
     letter-spacing: 0.06em;
-    max-width: 696px;
+    width: 365px;
     margin: 0 auto;
     text-transform: uppercase;
     margin-bottom: 30px;
+
+    @include desktop {
+      font-size: 44px;
+      width: 696px;
+    }
   }
 
   &__banner-button {
