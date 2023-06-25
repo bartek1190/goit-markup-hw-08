@@ -1,5 +1,4 @@
 .team {
-  display: none;
   background-color: $container-team-color;
 
   &__header {
@@ -13,5 +12,6 @@
     @include flex-center;
     gap: 30px;
     list-style: none;
+    flex-direction: column;
   }
 }
