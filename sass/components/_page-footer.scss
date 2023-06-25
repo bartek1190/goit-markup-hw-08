@@ -1,13 +1,24 @@
 .page-footer {
-  display: none;
   background-color: $general-gray-color;
 
   &__section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  &__flex-all {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   &__flexible {
     display: flex;
-    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  &__addresss {
+    text-align: center;
   }
 }

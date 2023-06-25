@@ -1,6 +1,4 @@
 .widget {
-  height: 80px;
-  width: 206px;
   list-style: none;
   display: flex;
   gap: 10px;
@@ -8,13 +6,15 @@
     background: $widget-item;
   }
   &__heading {
+    display: flex;
+    justify-content: center;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14em;
     letter-spacing: 0.03em;
     color: $white-font-color;
     text-transform: uppercase;
-    margin-top: 12px;
+    margin-top: 60px;
     margin-bottom: 20px;
   }
 }

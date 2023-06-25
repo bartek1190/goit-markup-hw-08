@@ -1,8 +1,7 @@
 .newsletter {
-  display: none;
-
   &__label {
     display: block;
+    text-align: center;
   }
   &__input {
     width: 358px;
@@ -14,6 +13,7 @@
     padding: 16px;
     color: $white-font-color;
     outline: none;
+    margin-bottom: 20px;
   }
   &__button {
     height: 50px;
@@ -28,9 +28,10 @@
     @include flex-center;
     gap: 24px;
     cursor: pointer;
+    margin: 0 auto;
   }
   &__div-flexible {
-    display: flex;
+    display: block;
     gap: 12px;
   }
   &__input:placeholder-shown {
