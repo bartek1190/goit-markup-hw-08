@@ -1,12 +1,24 @@
 .main-list {
   list-style: none;
   display: flex;
-  display: none;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 30px;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__item {
+    @include tablet {
+      width: 354px;
+      height: 251px;
+    }
+    @include desktop {
+      width: 270px;
+      height: 251px;
+    }
+  }
   &__card {
     background-color: $container-team-color;
-    width: 270px;
     height: 120px;
     display: flex;
     align-items: center;
