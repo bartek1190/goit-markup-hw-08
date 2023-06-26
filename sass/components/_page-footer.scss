@@ -5,6 +5,9 @@
       display: flex;
       gap: 144px;
     }
+    @include desktop {
+      gap: 70px;
+    }
   }
 
   &__section {
@@ -34,6 +37,12 @@
     @include tablet {
       margin-bottom: 60px;
       gap: 70px;
+    }
+    @include desktop {
+      text-align: left;
+      width: 246px;
+      height: 81px;
+      margin-bottom: 0;
     }
   }
   &__join-to-us {
