@@ -16,5 +16,11 @@
     text-transform: uppercase;
     margin-top: 60px;
     margin-bottom: 20px;
+    @include tablet {
+      margin-top: 0;
+    }
+    @include desktop {
+      margin-top: 12px;
+    }
   }
 }

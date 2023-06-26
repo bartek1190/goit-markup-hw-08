@@ -1,5 +1,11 @@
 .page-footer {
   background-color: $general-gray-color;
+  &__flex-again {
+    @include tablet {
+      display: flex;
+      gap: 144px;
+    }
+  }
 
   &__section {
     padding-top: 60px;
@@ -17,8 +23,21 @@
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+    }
   }
   &__addresss {
     text-align: center;
+    @include tablet {
+      margin-bottom: 60px;
+      gap: 70px;
+    }
+  }
+  &__join-to-us {
+    @include tablet {
+    }
   }
 }

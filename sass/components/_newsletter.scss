@@ -2,9 +2,29 @@
   &__label {
     display: block;
     text-align: center;
+    @include desktop {
+      text-align: left;
+    }
+  }
+  &__heading {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    color: $white-font-color;
+    text-transform: uppercase;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    @include tablet {
+      margin-top: 0;
+    }
+    @include desktop {
+      margin-left: 90px;
+      margin-top: 12px;
+    }
   }
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: transparent;
     border: 1px solid $general-blue-color;
@@ -14,6 +34,10 @@
     color: $white-font-color;
     outline: none;
     margin-bottom: 20px;
+    @include desktop {
+      width: 358px;
+      display: flex;
+    }
   }
   &__button {
     height: 50px;
@@ -29,10 +53,17 @@
     gap: 24px;
     cursor: pointer;
     margin: 0 auto;
+    @include desktop {
+      display: flex;
+    }
   }
   &__div-flexible {
     display: block;
     gap: 12px;
+    @include desktop {
+      margin-left: 90px;
+      display: flex;
+    }
   }
   &__input:placeholder-shown {
     border-color: $newsletter-placeholder;
