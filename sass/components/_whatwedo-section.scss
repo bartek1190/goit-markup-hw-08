@@ -1,5 +1,8 @@
 .section-whatwedo {
   display: none;
+  @include desktop {
+    display: block;
+  }
   margin-top: 94px;
   &__heading {
     font-size: 36px;
