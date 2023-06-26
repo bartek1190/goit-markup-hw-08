@@ -8,6 +8,9 @@
   align-items: center;
   margin-top: 16px;
   margin-left: 40px;
+  @include desktop {
+    margin-top: 20px;
+  }
 
   &__checkbox-hidden {
     visibility: hidden;

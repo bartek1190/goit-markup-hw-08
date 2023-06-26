@@ -21,6 +21,10 @@
   box-shadow: $modal-shadow;
   width: 450px;
   height: 609px;
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
 
   &__modal-close {
     border-radius: 50%;
@@ -47,6 +51,10 @@
     text-align: center;
     width: 370px;
     margin: 0 auto;
+    @include desktop {
+      width: 448px;
+      letter-spacing: 0.06em;
+    }
   }
   &__position-box {
     position: relative;
@@ -68,6 +76,10 @@
     padding-left: 42px;
     height: 40px;
     width: 370px;
+    @include desktop {
+      width: 448px;
+    }
+
     border-radius: 4px;
     border: $modal-input-border;
     transition-property: border;
@@ -89,6 +101,9 @@
   &__textarea {
     height: 120px;
     width: 370px;
+    @include desktop {
+      width: 448px;
+    }
     border-radius: 4px;
     border: $modal-input-border;
     outline: none;
