@@ -24,6 +24,7 @@
     }
   }
   &__input {
+    width: 90vw;
     height: 50px;
     background-color: transparent;
     border: 1px solid $general-blue-color;
@@ -34,7 +35,7 @@
     outline: none;
     margin-bottom: 20px;
     @include tablet {
-      width: 70vw;
+      width: 50vw;
     }
     @include desktop {
       width: 358px;
