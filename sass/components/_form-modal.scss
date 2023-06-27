@@ -20,15 +20,12 @@
   background: $white-font-color;
   box-shadow: $modal-shadow;
   width: calc(100% - 30px);
-  height: 609px;
-  // @include tablet {
-  //   width: 50vw;
-  //   height: 50vw;
-  // }
-  // @include desktop {
-  //   width: calc(50% - 30px);
-  //   height: 581px;
-  // }
+  @include tablet {
+    width: 60vw;
+  }
+  @include desktop {
+    width: 50vw;
+  }
   &__modal-close {
     border-radius: 50%;
     cursor: pointer;
@@ -44,16 +41,13 @@
   &__title {
     display: block;
     text-align: center;
-    padding-top: 2px;
-    padding-bottom: 12px;
     color: $general-font-color;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.5em;
     letter-spacing: 0.03em;
     text-align: center;
-    width: 370px;
-    margin: 0 auto;
+    margin: 0px 40px 12px;
     @include desktop {
       width: 448px;
       letter-spacing: 0.06em;
@@ -79,9 +73,6 @@
     padding-left: 42px;
     height: 40px;
     width: calc(100% - 80px);
-    @include desktop {
-      width: 448px;
-    }
 
     border-radius: 4px;
     border: $modal-input-border;
